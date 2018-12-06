@@ -1,6 +1,20 @@
 <template>
-  <div id="app"><h1>Directree</h1></div>
+  <div id="app">
+    <h1>Directree</h1>
+    <monaco-editor />
+  </div>
 </template>
+
+<script lang="ts">
+import Vue from "vue";
+import MonacoEditor from "./components/MonacoEditor.vue";
+
+export default Vue.extend({
+  components: {
+    MonacoEditor
+  }
+});
+</script>
 
 <style lang="scss">
 #app {
